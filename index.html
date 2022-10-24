@@ -16,7 +16,7 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #0A84FF;">
         <div class="container-fluid">
-            <a class="navbar-brand" aria-current="page" href="index.html">
+            <a class="navbar-brand" aria-current="page" href="#">
                 <img src="static/icons/logo-vue.svg" alt="" width="38" height="38" class="d-inline-block align-text-top">
                 Ask me</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,18 +31,30 @@
             </div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <img src="static/icons/IMG_3260.jpeg" alt="" width="38" height="38" class="d-inline-block align-text-top" style="border-radius: 19px;">
+                  <button type="login" class="btn btn-outline-success me-2">Login</button>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Ryabova Veronika</a>
+                  <button type="login" class="btn btn-outline-success">Signup</button>
                 </li>
               </ul>
         </div>
     </nav>
 </header>
+
+<!-- Begin page content -->
 <main class="flex-shrink-0">
 
     <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" >
+                Новые вопросы
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Популярные вопросы</a>
+            </li>
+        </ul>
         
         <div class="row">
             <div class="col-8">
@@ -54,7 +66,7 @@
                             </div>
                         </div>
                         <div class="col-10">
-                            <h2>Question 1</h2>
+                            <a href="question.html" class="question-title">Question 1</a>
                             <div class="question-rate">
                                 <img src="static/icons/star.svg" alt="" height="20" width="20"> 5
                             </div>
@@ -62,7 +74,7 @@
                             <div class="question-tag d-inline-block">popular tag</div>
                             <div class="question-tag d-inline-block">popular tag</div>
                             <div class="question-text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quos illo porro iure architecto. Nulla voluptatem consequatur ipsam laboriosam quae facere enim. Veritatis, sapiente voluptas nisi eius sequi ea suscipit.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ea, expedita hic magnam officia qui quod sed soluta suscipit vitae.
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -89,7 +101,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="answer">
+
+                <div class="question">
                     <div class="row">
                         <div class="col-2">
                             <div class="avatar">
@@ -97,11 +110,14 @@
                             </div>
                         </div>
                         <div class="col-10">
-                            <h3>Answer 1</h3>
-                            <div class="answer-rate">
+                            <a href="question.html" class="question-title">Question 2</a>
+                            <div class="question-rate">
                                 <img src="static/icons/star.svg" alt="" height="20" width="20"> 5
                             </div>
-                            <div class="answer-text">
+                            <div class="question-tag d-inline-block">popular tag</div>
+                            <div class="question-tag d-inline-block">popular tag</div>
+                            <div class="question-tag d-inline-block">popular tag</div>
+                            <div class="question-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ea, expedita hic magnam officia qui quod sed soluta suscipit vitae.
                             </div>
                             <div class="form-check form-check-inline">
@@ -125,11 +141,10 @@
                                 <label class="form-check-label" for="inlineCheckbox2">5</label>
                               </div>
                               <button type="button" class="btn">Rate!</button>
-    
                         </div>
                     </div>
                 </div>
-                <div class="answer">
+                <div class="question">
                     <div class="row">
                         <div class="col-2">
                             <div class="avatar">
@@ -137,11 +152,14 @@
                             </div>
                         </div>
                         <div class="col-10">
-                            <h3>Answer 2</h3>
-                            <div class="answer-rate">
+                            <a href="question.html" class="question-title">Question 3</a>
+                            <div class="question-rate">
                                 <img src="static/icons/star.svg" alt="" height="20" width="20"> 5
                             </div>
-                            <div class="answer-text">
+                            <div class="question-tag d-inline-block">popular tag</div>
+                            <div class="question-tag d-inline-block">popular tag</div>
+                            <div class="question-tag d-inline-block">popular tag</div>
+                            <div class="question-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ea, expedita hic magnam officia qui quod sed soluta suscipit vitae.
                             </div>
                             <div class="form-check form-check-inline">
@@ -165,11 +183,11 @@
                                 <label class="form-check-label" for="inlineCheckbox2">5</label>
                               </div>
                               <button type="button" class="btn">Rate!</button>
-    
+
                         </div>
                     </div>
                 </div>
-                <div class="answer">
+                <div class="question">
                     <div class="row">
                         <div class="col-2">
                             <div class="avatar">
@@ -177,11 +195,14 @@
                             </div>
                         </div>
                         <div class="col-10">
-                            <h3>Answer 3</h3>
-                            <div class="answer-rate">
+                            <a href="question.html" class="question-title">Question 4</a>
+                            <div class="question-rate">
                                 <img src="static/icons/star.svg" alt="" height="20" width="20"> 5
                             </div>
-                            <div class="answer-text">
+                            <div class="question-tag d-inline-block">popular tag</div>
+                            <div class="question-tag d-inline-block">popular tag</div>
+                            <div class="question-tag d-inline-block">popular tag</div>
+                            <div class="question-text">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ea, expedita hic magnam officia qui quod sed soluta suscipit vitae.
                             </div>
                             <div class="form-check form-check-inline">
@@ -205,10 +226,54 @@
                                 <label class="form-check-label" for="inlineCheckbox2">5</label>
                               </div>
                               <button type="button" class="btn">Rate!</button>
-    
+
                         </div>
                     </div>
                 </div>
+                <div class="question">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="avatar">
+                                <img src="static/icons/Component_1.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="col-10">
+                            <a href="question.html" class="question-title">Question 5</a>
+                            <div class="question-rate">
+                                <img src="static/icons/star.svg" alt="" height="20" width="20"> 5
+                            </div>
+                            <div class="question-tag d-inline-block">popular tag</div>
+                            <div class="question-tag d-inline-block">popular tag</div>
+                            <div class="question-tag d-inline-block">popular tag</div>
+                            <div class="question-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ea, expedita hic magnam officia qui quod sed soluta suscipit vitae.
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">2</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">3</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">4</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">5</label>
+                              </div>
+                              <button type="button" class="btn">Rate!</button>
+
+                        </div>
+                    </div>
+                </div>
+
                 <ul class="pagination justify-content-center">
                     <li class="page-item disabled">
                       <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
@@ -221,7 +286,6 @@
                     </li>
                   </ul>
             </div>
-            
             <div class="col-4">
                 <h2 class="popular-tags">Популярные теги</h2>
                 <ul class="nav flex-column">
@@ -251,3 +315,6 @@
                 Рябова Вероника</a></span>
     </div>
 </footer>
+
+</body>
+</html>
