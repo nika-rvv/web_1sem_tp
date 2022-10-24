@@ -6,6 +6,7 @@
     text-align: center;
 }
 .btn{
+    margin-left: 10px;
     border-radius: 6px;
     color: #0a84ffcd;
     border-color: #0a84ffcd;
@@ -38,10 +39,14 @@
     font-weight: lighter;
     color: #0c1926;
 }
-
+.btn.btn-outline-success:hover{
+    border: 2px solid #000080;
+    color: navy;
+}
 .btn-outline-success{
     border: 2px solid #f8f8ff;
     color: #f8f8ff;
+    background-color: #0A84FF;
 }
 .question-title{
     color: #0A84FF;
@@ -51,7 +56,7 @@
 .btn-outline-success:hover{
     border: 2px solid ghostwhite;
     color: ghostwhite;
-    background-color: #2264a7;
+    background-color: #0A84FF;
 }
 
 .form-control{
