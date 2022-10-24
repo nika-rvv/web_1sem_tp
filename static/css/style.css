@@ -12,6 +12,7 @@
     border-color: #0a84ffcd;
     padding: 3px 7px 3px 7px;
 }
+
 .btn:hover{
     background-color: #0a84ffcd;
     color: #f8f8ff;
@@ -40,13 +41,17 @@
     color: #0c1926;
 }
 .btn.btn-outline-success:hover{
-    border: 2px solid #000080;
-    color: navy;
+    border: 2px solid ghostwhite;
+    color: ghostwhite;
 }
-.btn-outline-success{
-    border: 2px solid #f8f8ff;
-    color: #f8f8ff;
+.a.btn.btn-outline-success{
     background-color: #0A84FF;
+}
+.btn.btn-outline-success{
+    border: 2px solid navy;
+    color: navy;
+    background-color: #0A84FF;
+    border-radius: 4px;
 }
 .question-title{
     color: #0A84FF;
