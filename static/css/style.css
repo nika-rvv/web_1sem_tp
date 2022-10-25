@@ -2,11 +2,19 @@
     margin-top: 40px;
     padding: 60px 15px 0;
 }
+.input-group-text {
+    height: 38px;
+}
+.input-group{
+    align-items: center;
+}
 .col-4{
     text-align: center;
 }
+.button-ask{
+    margin-top: 10px;
+}
 .btn{
-    margin-left: 10px;
     border-radius: 6px;
     color: #0a84ffcd;
     border-color: #0a84ffcd;
@@ -34,24 +42,38 @@
     background-color: #54a5f7cd;
     border-radius: 20px;
 }
-.popular-tags {
+
+.ask-new-question {
+    margin-top: 20px;
+    font-size: xx-large;
+    font-weight: medium;
+    font-style: italic;
+    color: #0c1d26;
+}
+
+.popular-tags,.best-members{
+    margin-top: 20px;
     text-align: center;
     font-size: xx-large;
     font-weight: lighter;
-    color: #0c1926;
+    font-style: italic;
+    color: #0c1d26;
 }
+
 .btn.btn-outline-success:hover{
     border: 2px solid ghostwhite;
     color: ghostwhite;
 }
-.a.btn.btn-outline-success{
-    background-color: #0A84FF;
-}
+
 .btn.btn-outline-success{
     border: 2px solid navy;
     color: navy;
     background-color: #0A84FF;
     border-radius: 4px;
+    margin: 16px 5px 16px 5px;
+}
+.navbar-nav.me-auto.mb-2.mb-lg-0{
+    align-items: center;
 }
 .question-title{
     color: #0A84FF;
@@ -63,12 +85,24 @@
     color: ghostwhite;
     background-color: #0A84FF;
 }
-
+.navbar.navbar-expand-md.navbar-dark.fixed-top {
+    align-items: center;
+}
 .form-control{
-    margin-left: 100px;
     width: 500px;
+    margin: 15px 5px 15px 100px;
 }
 
+.form-control.ask{
+    margin: 5px 5px 5px 5px;
+    width: 842px;
+}
+.form-label{
+    margin-top: 10px;
+    font-size: large;
+    font-weight: 600;
+    color: navy;
+}
 .navbar{
     height: 60px;
     border-radius: 0px 0px 16px 16px;

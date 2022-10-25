@@ -36,6 +36,9 @@
                 <li class="nav-item">
                   <a class="nav-link active" href="#">Ryabova Veronika</a>
                 </li>
+                <li class="nav-item">
+                  <a class="btn btn-outline-success" href="index.html" role="button">Log out</a>
+                </li>
               </ul>
         </div>
     </nav>
@@ -46,20 +49,25 @@
         
         <div class="row">
             <div class="col-8">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">Next</a>
-                    </li>
-                  </ul>
+              <h2 class="ask-new-question">New question</h2>
+                <label for="exampleFormControlInput1" class="col-1 form-label">Title</label>
+                  <input type="email" class="form-control ask" id="exampleFormControlInput1" placeholder="Title of your question">
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Text</label>
+                <textarea class="form-control ask" id="exampleFormControlTextarea1" rows="15" placeholder="Enter your question here"></textarea>
+              </div>
+              <div class="input-group">
+                <span class="input-group-text">Tags</span>
+                <input type="text" aria-label="First tag" class="form-control" placeholder="First tag">
+                <input type="text" aria-label="Second tag" class="form-control" placeholder="Second tag">
+                <input type="text" aria-label="Third tag" class="form-control" placeholder="Third tag">
+              </div>
+              <div class="button-ask">
+                <a class="btn btn-lg button-outline-success" href="index.html" role="button">Ask!</a>
+              </div>
             </div>
             <div class="col-4">
-                <h2 class="popular-tags">Популярные теги</h2>
+                <h2 class="popular-tags">Popular tags</h2>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#">First tag</a>
@@ -74,6 +82,21 @@
                       <a class="nav-link" href=#>Fourth tag</a>
                     </li>
                   </ul>
+                  <h2 class="best-members">Best members</h2>
+                  <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">First member</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Second member</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Third member</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href=#>Fourth member</a>
+                      </li>
+                    </ul>
             </div>
         </div>
     </div>
