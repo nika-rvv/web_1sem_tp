@@ -73,7 +73,33 @@
     border: 2px solid ghostwhite;
     color: ghostwhite;
 }
-
+.image{
+    display: inline;
+    margin-bottom: 4px;
+}
+.btn.like{
+    background-color: rgb(245, 138, 245) ;
+    color: white;
+    border-color: white;
+    padding: 5px 5px 5px 5px;
+    margin-right: 10px;
+}
+.btn.like:hover{
+    background-color: rgb(250, 77, 250) ;
+}
+.rate{
+    align-items: center;
+}
+.btn.dislike{
+    background-color: rgb(138, 245, 197) ;
+    color: white;
+    border-color: white;
+    margin: 10px 10px 10px 0px;
+    padding: 5px 5px 5px 5px;
+}
+.btn.dislike:hover{
+    background-color: rgb(67, 247, 166) ;
+}
 .btn.btn-outline-success{
     border: 2px solid navy;
     color: navy;
@@ -105,8 +131,8 @@
     margin: 5px 5px 5px 5px;
 }
 .form-control.ask{
-    margin: 5px 5px 5px 5px;
-    width: 842px;
+    margin: 5px 5px 5px 0px;
+    width: 850px;
 }
 .form-label{
     margin-top: 10px;

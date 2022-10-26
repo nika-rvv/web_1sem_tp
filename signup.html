@@ -34,7 +34,7 @@
                   <a role="login" href="login.html" class="btn btn-outline-success">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a role="signup" class="btn btn-outline-success" href="signup.html">Signup</a>
+                  <button type="login" class="btn btn-outline-success">Signup</button>
                 </li>
               </ul>
         </div>
@@ -46,7 +46,7 @@
         
         <div class="row">
             <div class="col-8">
-                <h2 class="registration">Log In</h2>
+                <h2 class="registration">Registration</h2>
                 <form class="row">
                     <div class="row">
                         <label for="validationServer01" class="form-label">Login</label>
@@ -56,14 +56,42 @@
                         </div>
                     </div>
                     <div class="row">
+                        <label for="validationServer01" class="form-label">Email</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Email" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Username</label>
+                          <input type="text" class="form-control is-invalid" id="validationServerUsername" required>
+                          <div class="invalid-feedback">
+                            Please enter a username.
+                          </div>
+                        
+                      </div>
+                    <div class="row">
                         <label for="validationServer01" class="form-label">Password</label>
                         <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Password" required>
                         <div class="valid-feedback">
                           Looks good!
                         </div>
                     </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Repeat Password</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Repeat password" required>
+                        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                            Please repeat password.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Choose avatar</label>
+                        <input type="file" class="form-control upload-photo" aria-label="file example" required>
+                        <div class="invalid-feedback">Example invalid form file feedback</div>
+                    </div>
+                  </form>
                   <div class="row">
-                    <a href="index.html" class="btn button-outline-success login" role="button">LOGIN!</a>
+                    <a href="index.html" class="btn button-outline-success login" role="button">Sign up!</a>
                   </div>
 
             </div>
