@@ -16,7 +16,7 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #0A84FF;">
         <div class="container-fluid">
-            <a class="navbar-brand" aria-current="page" href="index.html">
+            <a class="navbar-brand" href="index.html">
                 <img src="static/icons/logo-vue.svg" alt="" width="38" height="38" class="d-inline-block align-text-top">
                 Ask me</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,20 +27,14 @@
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-                <a href="ask.html" class="btn btn-outline-success" role="button">
-                  <img src="static/icons/add-circle.svg" alt="" height="20" width="20" class="d-inline-block align-text-top">
-                  Add question</a>
                 
             </div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <img src="static/icons/IMG_3260.jpeg" alt="" width="38" height="38" class="d-inline-block align-text-top" style="border-radius: 19px;">
+                  <a role="login" href="login.html" class="btn btn-outline-success">Login</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="settings.html">Ryabova Veronika</a>
-                </li>
-                <li class="nav-item">
-                  <a class="btn btn-outline-success" href="index.html" role="button">Log out</a>
+                  <button type="login" class="btn btn-outline-success">Signup</button>
                 </li>
               </ul>
         </div>
@@ -52,11 +46,34 @@
         
         <div class="row">
             <div class="col-8">
+                <h2 class="registration">Settings</h2>
+                <form class="row">
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Login</label>
+                        <input type="text" class="form-control settings" id="validationServer01" placeholder="Login">
+                    </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Email</label>
+                        <input type="text" class="form-control settings" id="validationServer01" placeholder="Email" required>
+                    </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Username</label>
+                          <input type="text" class="form-control settings" id="validationServerUsername" required>
+                        
+                      </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Choose avatar</label>
+                        <input type="file" class="form-control upload-photo" aria-label="file example" required>
+                        <div class="invalid-feedback">Example invalid form file feedback</div>
+                    </div>
+                  </form>
+                  <div class="row">
+                    <a href="index.html" class="btn button-outline-success login" role="button">Save!</a>
+                  </div>
 
             </div>
-            
             <div class="col-4">
-                <h2 class="popular-tags">Popular tags</h2>
+                <h2 class="popular-tags">Популярные теги</h2>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#">First tag</a>
