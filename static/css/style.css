@@ -2,6 +2,9 @@
     margin-top: 40px;
     padding: 60px 15px 0;
 }
+.row.g-3{
+    align-items: center;
+}
 .input-group-text {
     height: 38px;
 }
@@ -20,7 +23,13 @@
     border-color: #0a84ffcd;
     padding: 3px 7px 3px 7px;
 }
-
+.btn.button-outline-success.login{
+    margin-top: 20px;
+    margin-left: 5px;
+    height: 40px;
+    width: 100px;
+    padding: 5px 10px 5px 10px;
+}
 .btn:hover{
     background-color: #0a84ffcd;
     color: #f8f8ff;
@@ -43,7 +52,7 @@
     border-radius: 20px;
 }
 
-.ask-new-question {
+.ask-new-question, .registration {
     margin-top: 20px;
     font-size: xx-large;
     font-weight: medium;
@@ -92,7 +101,9 @@
     width: 500px;
     margin: 15px 5px 15px 100px;
 }
-
+.form-control.is-valid, .form-control.upload-photo, .form-control.is-invalid{
+    margin: 5px 5px 5px 5px;
+}
 .form-control.ask{
     margin: 5px 5px 5px 5px;
     width: 842px;

@@ -16,7 +16,7 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #0A84FF;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="static/icons/logo-vue.svg" alt="" width="38" height="38" class="d-inline-block align-text-top">
                 Ask me</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,10 +31,10 @@
             </div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <img src="icons/IMG_3260.jpeg" alt="" width="38" height="38" class="d-inline-block align-text-top" style="border-radius: 19px;">
+                  <a role="login" href="login.html" class="btn btn-outline-success">Login</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#">Ryabova Veronika</a>
+                  <button type="login" class="btn btn-outline-success">Signup</button>
                 </li>
               </ul>
         </div>
@@ -46,17 +46,54 @@
         
         <div class="row">
             <div class="col-8">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">Next</a>
-                    </li>
-                  </ul>
+                <h2 class="registration">Registration</h2>
+                <form class="row">
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Login</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Login" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Email</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Email" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Username</label>
+                          <input type="text" class="form-control is-invalid" id="validationServerUsername" required>
+                          <div class="invalid-feedback">
+                            Please enter a username.
+                          </div>
+                        
+                      </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Password</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Password" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Repeat Password</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Repeat password" required>
+                        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                            Please repeat password.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Choose avatar</label>
+                        <input type="file" class="form-control upload-photo" aria-label="file example" required>
+                        <div class="invalid-feedback">Example invalid form file feedback</div>
+                    </div>
+                  </form>
+                  <div class="row">
+                    <a href="index.html" class="btn button-outline-success login" role="button">LOGIN!</a>
+                  </div>
+
             </div>
             <div class="col-4">
                 <h2 class="popular-tags">Популярные теги</h2>
