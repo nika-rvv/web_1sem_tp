@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ryabova Ask me</title>
 
-    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="static/css/style.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
 </head>
 <body class="d-flex flex-column h-100">
 
@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #0A84FF;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="static/icons/logo-vue.svg" alt="" width="38" height="38" class="d-inline-block align-text-top">
+                <img src="../static/icons/logo-vue.svg" alt="" width="38" height="38" class="d-inline-block align-text-top">
                 Ask me</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,21 +46,44 @@
         
         <div class="row">
             <div class="col-8">
-                <h2 class="registration">Settings</h2>
+                <h2 class="registration">Registration</h2>
                 <form class="row">
                     <div class="row">
                         <label for="validationServer01" class="form-label">Login</label>
-                        <input type="text" class="form-control settings" id="validationServer01" placeholder="Login">
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Login" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
                     </div>
                     <div class="row">
                         <label for="validationServer01" class="form-label">Email</label>
-                        <input type="text" class="form-control settings" id="validationServer01" placeholder="Email" required>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Email" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
                     </div>
                     <div class="row">
                         <label for="validationServer01" class="form-label">Username</label>
-                          <input type="text" class="form-control settings" id="validationServerUsername" required>
+                          <input type="text" class="form-control is-invalid" id="validationServerUsername" required>
+                          <div class="invalid-feedback">
+                            Please enter a username.
+                          </div>
                         
                       </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Password</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Password" required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="validationServer01" class="form-label">Repeat Password</label>
+                        <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Repeat password" required>
+                        <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                            Please repeat password.
+                        </div>
+                    </div>
                     <div class="row">
                         <label for="validationServer01" class="form-label">Choose avatar</label>
                         <input type="file" class="form-control upload-photo" aria-label="file example" required>
@@ -68,7 +91,7 @@
                     </div>
                   </form>
                   <div class="row">
-                    <a href="index.html" class="btn button-outline-success login" role="button">Save!</a>
+                    <a href="index.html" class="btn button-outline-success login" role="button">Sign up!</a>
                   </div>
 
             </div>
