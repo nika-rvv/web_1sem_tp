@@ -8,7 +8,9 @@ def index(request):
     return render(request, 'index.html', context=context)
 
 def question(request, question_id: int):
-    return render(request, 'question.html')
+    question_item = models.Questions[question_id]
+    context = {'question': question_item}
+    return render(request, 'question.html', context=context)
 
 def ask(request):
     return render(request,'ask.html')
