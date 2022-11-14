@@ -1,112 +1,26 @@
 <!doctype html>
-<html lang="en" class="h-100">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ryabova Ask me</title>
+{% extends "inc/base.html" %} 
 
-    <link href="../static/css/bootstrap.css" rel="stylesheet">
+{% load static %}
+{% block content %}
 
-    <!-- Custom styles for this template -->
-    <link href="../static/css/style.css" rel="stylesheet">
-</head>
-<body class="d-flex flex-column h-100">
+<h2 class="ask-new-question">New question</h2>
+<label for="exampleFormControlInput1" class="col-1 form-label">Title</label>
+<input type="email" class="form-control ask" id="exampleFormControlInput1" placeholder="Title of your question">
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Text</label>
+  <textarea class="form-control ask" id="exampleFormControlTextarea1" rows="15"
+    placeholder="Enter your question here"></textarea>
+</div>
+<div class="input-group">
+  <span class="input-group-text">Tags</span>
+  <input type="text" aria-label="First tag" class="form-control" placeholder="First tag">
+  <input type="text" aria-label="Second tag" class="form-control" placeholder="Second tag">
+  <input type="text" aria-label="Third tag" class="form-control" placeholder="Third tag">
+</div>
+<div class="button-ask">
+  <a class="btn btn-lg button-outline-success" href="{% url "index" %}" role="button">Ask!</a>
+</div>
 
-<header>
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #0A84FF;">
-        <div class="container-fluid">
-            <a class="navbar-brand" aria-current="page" href="index.html">
-                <img src="../static/icons/logo-vue.svg" alt="" width="38" height="38" class="d-inline-block align-text-top">
-                Ask me</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                
-            </div>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <img src="../static/icons/IMG_3260.jpeg" alt="" width="38" height="38" class="d-inline-block align-text-top" style="border-radius: 19px;">
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="settings.html">Ryabova Veronika</a>
-                </li>
-                <li class="nav-item">
-                  <a class="btn btn-outline-success" href="index.html" role="button">Log out</a>
-                </li>
-              </ul>
-        </div>
-    </nav>
-</header>
-<main class="flex-shrink-0">
 
-    <div class="container">
-        
-        <div class="row">
-            <div class="col-8">
-              <h2 class="ask-new-question">New question</h2>
-                <label for="exampleFormControlInput1" class="col-1 form-label">Title</label>
-                  <input type="email" class="form-control ask" id="exampleFormControlInput1" placeholder="Title of your question">
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Text</label>
-                <textarea class="form-control ask" id="exampleFormControlTextarea1" rows="15" placeholder="Enter your question here"></textarea>
-              </div>
-              <div class="input-group">
-                <span class="input-group-text">Tags</span>
-                <input type="text" aria-label="First tag" class="form-control" placeholder="First tag">
-                <input type="text" aria-label="Second tag" class="form-control" placeholder="Second tag">
-                <input type="text" aria-label="Third tag" class="form-control" placeholder="Third tag">
-              </div>
-              <div class="button-ask">
-                <a class="btn btn-lg button-outline-success" href="index.html" role="button">Ask!</a>
-              </div>
-            </div>
-            <div class="col-4">
-                <h2 class="popular-tags">Popular tags</h2>
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">First tag</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Second tag</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Third tag</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href=#>Fourth tag</a>
-                    </li>
-                  </ul>
-                  <h2 class="best-members">Best members</h2>
-                  <ul class="nav flex-column">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">First member</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Second member</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Third member</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href=#>Fourth member</a>
-                      </li>
-                    </ul>
-            </div>
-        </div>
-    </div>
-
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <span class="text-muted">
-            <a href="https://t.me/nika_rvv" style="font-size: large; font-weight: lighter;">
-                Рябова Вероника</a></span>
-    </div>
-</footer>
+{% endblock content %}
