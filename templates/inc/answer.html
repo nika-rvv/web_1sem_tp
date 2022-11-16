@@ -8,9 +8,10 @@
         </div>
       </div>
       <div class="col-10">
-        <h3>Answer 1</h3>
+        <h3>Answer</h3>
         <div class="answer-rate">
-          <img src="{% static "icons/blue-heart.svg" %}" alt="" height="20" width="20"> 5
+          <img src="{% static "icons/blue-heart.svg" %}" alt="" height="20" width="20"> 
+          <div class="count">{{answer.rating}}</div>
         </div>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
@@ -19,8 +20,7 @@
           </label>
         </div>
         <div class="answer-text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor ea, expedita hic magnam officia qui quod sed
-          soluta suscipit vitae.
+          {{answer.text}}
         </div>
         <div class="rate">
           <button class="btn like d-inline-block">

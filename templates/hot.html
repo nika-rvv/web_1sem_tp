@@ -2,15 +2,17 @@
 {% load static %}
 
 <!--Content-->
+
 {% block article_name %}
 <div class="row">
 <div class="col-6">
-  <h2>New questions</h2>
+  <h2>Hot questions</h2>
 </div>
 <div class="col-6">
-<a href="{% url "hot" %}"> Go to hot questions </a>
+<a href="{% url "index" %}"> Go to new questions </a>
 </div>
 </div>
+
 
 {% endblock article_name %} 
 

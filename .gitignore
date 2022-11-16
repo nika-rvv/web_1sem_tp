@@ -1,2 +1,9 @@
-venv
-*.pyc
+venv/
+node_modules/
+.idea/
+.vscode/
+*__pycache__/
+package-lock.json
+package.json
+db.sqlite3
+uploads
