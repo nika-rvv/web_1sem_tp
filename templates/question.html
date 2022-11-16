@@ -4,7 +4,9 @@
 
 {% block content %}
 {% include "inc/question.html" %}
+{% for answer in answers %}
 {% include "inc/answer.html" %}
+{% endfor %}
 
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label">Your answer</label>
